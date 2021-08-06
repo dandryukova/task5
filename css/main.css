@@ -1,0 +1,253 @@
+html {
+	font-size: 10px;
+	font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+img {
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+
+}
+
+p, ul {
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	width: 100%;
+	padding: 20px 0;
+	/* position: fixed; */
+	top: 0;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1240px;
+	padding: 0 15px;
+}
+
+.header {
+	width: 100%;
+	background-color: rgba(0, 248, 54, 0.582);
+	max-height: 100px;
+}
+
+.header__wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header__logo {
+	display: flex;
+	align-items: center;
+}
+
+.header__image {
+	max-width: 30px;
+	margin-right: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.header__nav-list {
+	display: flex;
+	align-self: center;
+	justify-content: space-between;
+}
+
+.header__nav-list > li {
+	margin-right: 15px;
+	position: relative;
+	padding: 5px 0;
+}
+
+
+.header__drop-menu {
+	width: 100%;
+	position: absolute;
+	top: 35px;
+	background-color: cornflowerblue;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 8px;
+	visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease-in-out;
+}
+
+.header__drop-menu-item {
+	width: 110%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(47%);
+	border-radius: 8px;
+	background-color: cornflowerblue;
+	visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease-in-out;
+}
+
+
+.drop-menu__link2:hover > .header__drop-menu-item {
+		visibility: visible;
+	  opacity: 1;
+	}
+
+
+.header__drop-menu > li {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 10px 0;
+}
+
+.header__drop-menu li a {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding-left: 10px;
+	color: #fff;
+}
+
+.header__drop-menu li a:hover {
+	color: darkgoldenrod;
+}
+.header__drop-menu li a:active {
+	color: yellowgreen;
+}
+.header__drop-menu li a:focus {
+	color: yellowgreen;
+}
+
+.header__nav-link-portfolio:hover > .header__drop-menu {
+	visibility: visible;
+  opacity: 1;
+}
+
+li:hover > header__drop-menu {
+visibility: visible;
+transform: translateX(50%);
+
+  opacity: 1;
+
+}
+
+.content {
+	padding: 40px 0;
+	max-width: 100%;
+	margin-top: 50px;
+	background-color: rgba(128, 128, 128, 0.431);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content__wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.content__items {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.content__items > div:first-child:hover {
+	background-color: red;
+}
+
+.content__items > div:first-child:hover > .popup {
+	visibility: visible;
+	opacity: 1;
+}
+
+.content__items > div:last-child:hover {
+	background-color: red;
+	transform: scale(1.2);
+}
+
+.content_item:hover {
+	background-color: aqua;
+}
+
+.content_item {
+	width: 100px;
+	height: 100px;
+	background-color: purple;
+	margin-right: 10px;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-size: 38px;
+	cursor: pointer;
+	transition: background-color 0.5s ease-in-out, transform 0.5s ease-in;
+}
+.content__box {
+	padding: 10px;
+	position: relative;
+}
+
+.content__video_setting {
+	width: 100%;
+	border-radius: 10px;
+}
+
+.popup {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.479);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	visibility: hidden;
+	opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease-in-out;
+  color: black;
+}
+
+.popup__wrap {
+	padding: 40px;
+	width: 500px;
+	height: 400px;
+	background: #fff;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	border-radius: 8px;
+	position: relative;
+	box-shadow: 0 0 12px 2px black;
+}
+
+.popup__close {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
+}
+
+.text {
+	padding-top: 40px;
+}
