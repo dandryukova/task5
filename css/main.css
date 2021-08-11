@@ -33,11 +33,7 @@ p, ul {
 	top: 0;
 }
 
-.container {
-	margin: 0 auto;
-	max-width: 1240px;
-	padding: 0 15px;
-}
+
 
 .header {
 	width: 100%;
@@ -202,6 +198,10 @@ transform: translateX(50%);
 	cursor: pointer;
 	transition: background-color 0.5s ease-in-out, transform 0.5s ease-in;
 }
+.content_item.fas, .content_item.far, .content_item.fab {
+	display: flex;
+}
+
 .content__box {
 	padding: 10px;
 	position: relative;
